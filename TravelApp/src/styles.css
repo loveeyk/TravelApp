@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-    padding: 1rem;
+    padding: 3rem 1rem 1rem 1rem;
 }
 
 .center {
@@ -26,7 +26,7 @@ body {
     margin-right: auto;
 }
 
-@media(min-width: 600px) {
+@media(min-width: 700px) {
     .hideOnDesktop {
         display: none;
     }

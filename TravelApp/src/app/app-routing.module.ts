@@ -15,10 +15,10 @@ const routes: Routes = [
   {
     path: "travel", component: TravelComponent
   },
-  {
+  {  
     path: "about", component: AboutusComponent
   },
-  {
+   {
     path: "contact", component: ContactusComponent
   },
   {

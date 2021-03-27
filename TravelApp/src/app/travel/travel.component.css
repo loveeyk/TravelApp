@@ -1,0 +1,14 @@
+.carousel_wrapper {
+    background: url(https://images.pexels.com/photos/5138883/pexels-photo-5138883.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 100px;
+}
+
+.heading {
+    margin: 2rem;
+    background-color: rgba(245, 245, 245, 0.434);
+    font-size: xx-large;
+    border: rgb(19, 37, 58) solid 2px;
+    box-shadow: rgb(35, 46, 58) 5px 10px 10px;
+}

@@ -1,5 +1,5 @@
 .hero {
-    background: url(../../assets/img/hero.jpg);
+    background: url(../../assets/img/hero2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -11,7 +11,8 @@
 
 .hero-inner {
     position: absolute;
-    top: 30%;
+    top: 50%;
+    color: white;
 }
 
 .heading {
