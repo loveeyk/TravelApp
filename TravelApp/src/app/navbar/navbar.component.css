@@ -1,0 +1,44 @@
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+@media(max-width: 600px) {
+    .navbar {
+        justify-content: center;
+        background: #ccc;
+    }
+    ul {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+ul {
+    padding: 0 1rem;
+    list-style: none;
+    display: inline-flex;
+    margin-left: auto;
+    transition: margin 0.3s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+}
+
+a {
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    color: #222;
+}
+
+a:hover {
+    background: rgba(238, 238, 238, 0.228);
+}
+
+#icon {
+    padding-left: 0;
+}

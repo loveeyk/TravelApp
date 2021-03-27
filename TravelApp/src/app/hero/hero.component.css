@@ -1,0 +1,21 @@
+.hero {
+    background: url(../../assets/img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-inner {
+    position: absolute;
+    top: 30%;
+}
+
+.heading {
+    font-size: 3rem;
+}
+
+.sub-heading {}
