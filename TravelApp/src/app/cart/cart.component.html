@@ -1,0 +1,43 @@
+<div class="container-wrapper container bg-white rounded-top mt-5">
+
+    <h5 class="text-uppercase font-weight-normal">shopping bag</h5>
+
+    <div class="font-weight-normal">{{items.length}}</div>
+
+    <div class="d-flex flex-row w-75 ml-auto justify-content-between mx-lg-5 mobile" id="heading">
+        <div class="px-lg-5 mr-lg-5" id="produc">PRODUCTS</div>
+        <div class="px-lg-5 ml-lg-5" id="prc">PRICE</div>
+        <div class="px-lg-5 ml-lg-1" id="quantity">DURATION</div>
+        <div class="px-lg-5 ml-lg-3" id="total">TOTAL</div>
+    </div>
+    <div *ngFor="let item of items; let i = index" class="d-flex flex-row justify-content-between align-items-center pt-lg-4 pt-2 pb-3 border-bottom mobile">
+        <div class="d-flex flex-row align-items-center">
+            <div><img src="{{item.images[0]}}" width="150" height="150" alt="" id="image"></div>
+            <div class="d-flex flex-column pl-md-3 pl-1">
+                <div>
+                    <h6 class="px-2">{{item.name}}</h6>
+                </div>
+            </div>
+        </div>
+        <div class="pl-md-0 pl-1"><b>{{item.price}}</b></div>
+        <div class="pl-md-0 pl-1"><b>{{item.duration}} days</b></div>
+        <div class="close" (click)="deleteButtonHandler(item)">&times;</div>
+    </div>
+
+
+    <div class="container bg-light rounded-bottom py-4" id="zero-pad">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-10 col-12">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div> <button class="btn btn-sm bg-light border border-dark">GO BACK</button> </div>
+                    <div *ngIf="!getTotalPrice().reduced" class="px-md-0 px-1" id="footer-font"> <b class="pl-md-4">SUBTOTAL <span class="pl-md-4">€ {{getTotalPrice().price}}</span></b> </div>
+                    <div> <button class="btn btn-sm bg-dark text-white px-lg-5 px-3">CONTINUE</button> </div>
+                </div>
+                <div *ngIf="getTotalPrice().reduced" class="d-flex justify-content-center align-items-center">
+                    <div class="px-md-0 px-1"><b class="pl-md-4">RUDECED PRICE ({{getTotalPrice().red}}): <span class="pl-md-4">€ {{getTotalPrice().price}}</span></b></div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>

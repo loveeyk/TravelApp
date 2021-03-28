@@ -9,10 +9,11 @@ import {travelplace} from '../travel'
 export class TravelComponent implements OnInit{
 
 
-  travels = travelplace;
-
+  travels = [...travelplace];
+  heading = "Explore all destination and book your dream holiday today."
 
   ngOnInit(): void {
+    
   }
 
   

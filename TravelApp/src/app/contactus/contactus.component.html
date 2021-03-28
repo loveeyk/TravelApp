@@ -1,1 +1,30 @@
-<p>contactus works!</p>
+<div class="container-wrapper">
+    <div class="text-center">
+        <h1>Leave us a message below</h1>
+        <p>Do not forget to subscribe and recommend us. If you have any wishes or recommendations do not hesitate to contact us!</p>
+    </div>
+    <div class="container-fluid wrapper p-5">
+
+        <div class="form_wrapper d-flex flex-column w-100 justify-content-center align-items-center text-center">
+            <label for="name">
+       Name
+     </label>
+            <input class="my-3 w-50" id="name" type="text" formControlName="name">
+
+
+            <label for="email">
+       Email
+     </label>
+            <input class="my-3 w-50" id="email" type="email" formControlName="email">
+            <label for="message">
+        Let us know your thoughts
+      </label>
+            <input class="my-3 py-5 w-50" id="message" type="text" formControlName="message">
+
+
+            <form [formGroup]="contactForm">
+                <button class="btn btn-danger m-3 " type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>

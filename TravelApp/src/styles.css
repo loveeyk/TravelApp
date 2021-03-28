@@ -10,8 +10,8 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-.container {
-    padding: 3rem 1rem 1rem 1rem;
+.container-wrapper {
+    padding: 100px 1rem 1rem 1rem;
 }
 
 .center {

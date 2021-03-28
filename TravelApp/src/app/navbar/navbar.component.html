@@ -10,12 +10,12 @@
         <a>menu</a>
     </span>
     <span class="material-icons-outlined">
-        <a routerLink="cart">shopping_bag</a>
-        </span>
+        <a routerLink="cart">shopping_bag </a>
+        </span> <span class="pr-4">{{cartSize}}</span>
     <ul [ngStyle]="toggleNavbar()">
-        <li *ngFor="let link of links ">
-            <a routerLink="{{link.path}}" (click)="linkClickedHandler()">{{link.text}}</a></li>
-
+        <li *ngFor="let link of links">
+            <a class="" routerLink="{{link.path}}" (click)="linkClickedHandler()">{{link.text}}</a>
+        </li>
     </ul>
 
 
